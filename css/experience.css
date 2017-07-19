@@ -1,0 +1,84 @@
+.container {
+	display: flex;
+	flex-flow: row;
+	align-items: center;
+    align-content: center;
+    text-align: center;
+ 
+
+}
+
+.droptext {
+
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-family:Arial, Times, serif;
+    font-weight: bold;
+    font-style: normal;
+    font-variant: small-caps;
+
+
+
+}
+
+.child {
+
+	width: 100%;
+	height: 200px;
+	animation-name: textdrop;
+    animation-duration: 6s;
+
+
+}
+
+
+#child01{
+	
+	animation-delay: 0s;
+
+
+}
+
+
+#child02{
+
+
+	animation-delay: 0s;
+
+}
+	
+
+
+#child03{
+
+
+	animation-delay: 0s;
+
+	
+}
+
+
+@keyframes textdrop {
+
+	0% {
+
+		opacity: 0.0;
+		transform: rotateY(180deg);
+
+	}
+
+
+
+	100% {
+
+		opacity: 1.0;
+		transform: rotateY(360deg);
+
+	}
+
+
+}

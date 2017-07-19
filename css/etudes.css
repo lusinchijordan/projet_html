@@ -1,0 +1,88 @@
+.container {
+	display: flex;
+	flex-flow: row;
+	align-items: center;
+    align-content: center;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+ 
+
+}
+
+.textbloc {
+
+    width: 100%;
+    height: 150vh;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    font-family:Arial, Times, serif;
+    font-weight: bold;
+    font-style: normal;
+    font-variant: small-caps;
+
+
+
+}
+
+.leftpicture {
+
+	float: left;
+}
+
+.rightpicture {
+
+	float: right;
+}
+
+#etudes1, #etudes3, #etudes5{
+
+	animation-name: slidetext_left;
+	animation-duration: 4s;
+
+}
+
+#etudes2, #etudes4 {
+
+	animation-name: slidetext_right;
+	animation-duration: 4s;
+
+}
+
+@keyframes slidetext_left {
+
+	0% {
+
+		transform:translateX(-300%);
+		opacity: 0;
+	}
+
+	100%{
+
+
+		transform: translateX(0%);
+		opacity: 1;
+	}
+
+}
+
+
+@keyframes slidetext_right {
+
+	0% {
+
+		transform:translateX(300%);
+		opacity: 0;
+	}
+
+	100%{
+
+
+		transform: translateX(0%);
+		opacity: 1;
+	}
+
+}
